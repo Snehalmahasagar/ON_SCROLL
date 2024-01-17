@@ -38,14 +38,96 @@ nav a.active {
 }
 section {
     min-height: 100vh;
-    display: flex;
+    /* display: flex;  */
     justify-content: center;
     align-items: center;
     background: #1f242d;
-    font-size: 100px;
+     /* font-size: 100px;  */
     color: #fff;
-    font-weight: 700;
+     /* font-weight: 700;  */
+
 }
 section:nth-child(odd) {
     background: #323946;
+}
+
+.homeslider{
+    font-size: 13px;
+    
+    font-weight: 100;
+}
+.info-detailed {
+    display: flex;
+    align-items: center;
+}
+
+.info {
+    background-color: #1a1a1a; /* Dark background color */
+    color: #fff; /* Text color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle lift */
+    border-radius: 8px; /* Rounded corners for a card-like appearance */
+    padding: 10px; /* Add padding for spacing inside the card */
+    margin-left: 10%; /* Add margin for spacing between cards */
+    width: 35%;
+    margin-top: 5%;
+}
+
+/* Add hover effect for a subtle interaction */
+.info:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+}
+
+/* Additional styling for the heading and paragraph */
+.info h3 {
+    color: #ff6f61; /* Aesthetic color for the heading */
+    margin-bottom: 10px; /* Add margin below the heading */
+}
+
+.info p {
+    line-height: 1.6; /* Set line height for better readability */
+}
+
+/* Media query for responsive design if needed */
+@media (max-width: 768px) {
+    .info {
+        flex-basis: 100%; /* Make the cards stack on smaller screens */
+    }
+}
+h1{
+    /* text-align: center; */
+    margin-left:  43%;
+    padding-top: 3%;
+    
+
+
+}
+.contact-container {
+    color:white ;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.heading{
+    color:white;
+    
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.info-item {
+    text-align: center;
+}
+
+.info-item h2 {
+    color: #007bff;
+}
+
+.info-item p {
+    color: #555;
 }
